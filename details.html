@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí Book Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <div class="header__left">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="header__menu">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li class="active">
+                        <a href="./books.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__right">
+                <div class="header__cart">
+                    <a href="./cart.html">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                    <span class="cart-count">10</span>
+                </div>
+                <div class="header__actions">
+                    <a href="./login-signup.html" class="btn btn-sm header__login show">Login</a>
+                    <div class="user__actions">
+                        <div class="avatar">
+                            <img src="./images/avatar.png" alt="">
+                        </div>
+                        <i class="bi bi-caret-down-fill"></i>
+                        <ul class="action__list">
+                            <li>
+                                <a href="./myaccount.html">My account</a>
+                            </li>
+                            <li>
+                                <a href="./checkout.html">Check out</a>
+                            </li>
+                            <li class="log-out">
+                                <span>Log out</span>
+                                <i class="bi bi-box-arrow-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SCROLL PAGE START -->
+    <div class="scroll__page">
+        <a href="#header">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+    </div>
+    <!--  SCROLL PAGE START -->
+
+    <!-- BREAD START -->
+    <section class="breadcrumb">
+        <ul class="breadcrumb__list container">
+            <li><a href="./index.html" class="breadcrumb__link">Home</a></li>
+            <li><span class="breadcrumb__link">></span></li>
+            <li><a href="./books.html" class="breadcrumb__link">Books</a></li>
+            <li><span class="breadcrumb__link">></span></li>
+            <li><span class="breadcrumb__link link__name">The Throned Mirror</span></li>
+        </ul>
+    </section>
+    <!-- BREAD END -->
+
+    <!-- DETAILS START -->
+    <section class="details">
+        <div class="details__container container">
+            <div class="details__content">
+                <div class="details__image">
+                    <img src="./images/thronedMirror.jpg" alt="" class="details__img">
+                </div>
+                <div class="details__group">
+                    <div class="details__heading">
+                        <h3 class="details__author">Anna Banks</h3>
+                        <span>-----</span>
+                        <h3 class="details__category">Fantasy</h3>
+                    </div>
+                    <h2 class="details__name">The Throned Mirror</h2>
+
+                    <div class="detail__price">
+                        <span class="price">$23.00</span>
+                        <span class="plus">+</span>
+                        <span class="ship">Free Shipping</span>
+                    </div>
+
+                    <p class="details__introduce">
+                        Platea mauris in sit aliquam commodo ipsum, pharetra tempus proin diam metus eget quis lobortis
+                        commodo scelerisque etiam placerat amet, commodo tincidunt pellentesque porttitor elit est cras
+                        eu duis bibendum viverra eu est mattis vitae viverra vel non egestas commodo faucibus mi ipsum
+                        cursus euismod risus morbi ut.
+                    </p>
+
+                    <div class="details__actions">
+                        <input type="number" class="quantity" name="quantity" min="0" value="1">
+                        <button class="btn btn-md">Add to cart</button>
+                        <a href="./cart.html" class="btn btn-md">Buy Now</a>
+                    </div>
+
+                    <div class="details__tags">
+                        <p class="tags__category">Category: <span>Fantasy</span></p>
+                        <p class="tags">Tags: <span>Fantasy, Fiction, Mythology</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="details__description">
+                <h3 class="desc__title">Description</h3>
+                <p class="desc__text">
+                    Platea mauris in sit aliquam commodo ipsum, pharetra tempus proin diam metus eget quis lobortis
+                    commodo scelerisque etiam placerat amet, commodo tincidunt pellentesque porttitor elit est cras eu
+                    duis bibendum viverra eu est mattis vitae viverra vel non egestas commodo faucibus mi ipsum cursus
+                    euismod risus morbi ut.
+                </p>
+                <div class="desc__text">
+                    Amet in pretium libero vitae mattis at bibendum iaculis suspendisse enim interdum vel commodo sed
+                    est placerat volutpat commodo adipiscing odio egestas euismod egestas lacus iaculis aenean porttitor
+                    facilisis cras elit felis purus vel mi, elit cursus scelerisque lectus morbi elementum vulputate
+                    augue non rhoncus morbi nisl, volutpat integer blandit nullam pellentesque ornare quam tincidunt
+                    pharetra, volutpat purus elementum, enim et feugiat quam congue.
+                </div>
+            </div>
+
+            <div class="details__related">
+                <h1 class="relate__title">Relate Products</h1>
+                <div class="book__list">
+                    <div class="book__item">
+                        <a href="./details.html">
+                            <img src="./images/2024Sanctuary.jpg" alt="book image" class="book__img">
+                        </a>
+                        <div class="book__heading">
+                            <span class="book__author">Anna Banks</span>
+                            <span class="book__category">Sci-Fi</span>
+                        </div>
+                        <span class="book__name">2024: Sanctuary</span>
+                        <span class="book__price">$24.00</span>
+                        <button class="book__add" aria-label="Add to cart">
+                            <i class="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                    <div class="book__item">
+                        <a href="./details.html">
+                            <img src="./images/cyberAngle.jpg" alt="book image" class="book__img">
+                        </a>
+                        <div class="book__heading">
+                            <span class="book__author">Anna Banks</span>
+                            <span class="book__category">Sci-Fi</span>
+                        </div>
+
+                        <span class="book__name">Cyber Angle</span>
+                        <span class="book__price">$20.00</span>
+                        <button class="book__add" aria-label="Add to cart">
+                            <i class="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                    <div class="book__item">
+                        <a href="./details.html">
+                            <img src="./images/algorab.jpg" alt="book image" class="book__img">
+                        </a>
+                        <div class="book__heading">
+                            <span class="book__author">Anna Banks</span>
+                            <span class="book__category">Fantasy</span>
+                        </div>
+
+                        <span class="book__name">Mists of Algorab</span>
+                        <span class="book__price">$22.00</span>
+                        <button class="book__add" aria-label="Add to cart">
+                            <i class="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                    <div class="book__item">
+                        <a href="./details.html">
+                            <img src="./images/TheSonOfTheEmpire.jpg" alt="book image" class="book__img">
+                        </a>
+                        <div class="book__heading">
+                            <span class="book__author">Anna Banks</span>
+                            <span class="book__category">Fantasy</span>
+                        </div>
+                        <span class="book__name">The Sons of the Empire</span>
+                        <span class="book__price">$20.00</span>
+                        <button class="book__add" aria-label="Add to cart">
+                            <i class="bi bi-cart-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DETAILS END -->
+
+
+    <!-- TOAST MESSAGE START -->
+    <div id="toast">
+    </div>
+    <!-- TOAST MESSAGE END -->
+
+    
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__social">
+                <p class="social__title">Wellcome to HV-DK Books Store</p>
+                <p>Get the breathing space now, and we'll extend your term at the other end year for go.</p>
+                <div class="social__list">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <p class="contact__title">Contact</p>
+                <p>
+                    Address: Cao Lanh city, Dong Thap province, VietNam
+                    <br>
+                    Email: email@gmail.com
+                    <br>
+                    Phone: 0123456789
+                </p>
+            </div>
+        </div>
+        <div class="footer__design">
+            <p>Powered by HV-DK Store</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+    <script type="module" src="./js/details.js"></script>
+
+</body>
+
+</html>

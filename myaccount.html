@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lí Book Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- HEADER START -->
+    <header class="header" id="header">
+        <div class="header__container container">
+            <div class="header__left">
+                <div class="logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="logo">
+                    </a>
+                </div>
+                <ul class="header__menu">
+                    <li class="active">
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./books.html">Books</a>
+                    </li>
+                    <li>
+                        <a href="./about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__right">
+                <div class="header__cart">
+                    <a href="./cart.html">
+                        <i class="bi bi-cart3"></i>
+                    </a>
+                    <span class="cart-count">10</span>
+                </div>
+                <div class="header__actions">
+                    <a href="./login-signup.html" class="btn btn-sm header__login">Login</a>
+                    <div class="user__actions show">
+                        <div class="avatar">
+                            <img src="./images/avatar.png" alt="">
+                        </div>
+                        <i class="bi bi-caret-down-fill"></i>
+                        <ul class="action__list">
+                            <li>
+                                <a href="./myaccount.html">My account</a>
+                            </li>
+                            <li>
+                                <a href="./checkout.html">Check out</a>
+                            </li>
+                            <li class="log-out">
+                                <span>Log out</span>
+                                <i class="bi bi-box-arrow-right"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- SCROLL PAGE START -->
+    <div class="scroll__page">
+        <a href="#header">
+            <i class="bi bi-chevron-up"></i>
+        </a>
+    </div>
+    <!--  SCROLL PAGE START -->
+
+    <!-- BREAD START -->
+    <section class="breadcrumb">
+        <ul class="breadcrumb__list container">
+            <li><a href="./index.html" class="breadcrumb__link">Home</a></li>
+            <li><span class="breadcrumb__link">></span></li>
+            <li><a href="./myaccount.html" class="breadcrumb__link">My Account</a></li>
+        </ul>
+    </section>
+    <!-- BREAD END -->
+
+    <!-- ACCOUNT START -->
+    <section class="account">
+        <div class="account__container container">
+            <div class="account__siderbar">
+                <span class="sidebar__item" data-target="#my-account">
+                    <i class="bi bi-person-badge"></i>
+                    My Account
+                </span>
+                <span class="sidebar__item" data-target="#update-info">
+                    <i class="bi bi-arrow-repeat"></i>
+                    Update Info
+                </span>
+                <span class="sidebar__item" data-target="#order">
+                    <i class="bi bi-cart"></i>
+                    Order
+                </span>
+                <span class="sidebar__item" data-target="#change-password">
+                    <i class="bi bi-key"></i>
+                    Change Password
+                </span>
+            </div>
+            <div class="account__main">
+                <div class="account__content active" id="my-account">
+                    <div class="account__info">
+                        <div class="account__group">
+                            <span>Name: </span>
+                            <span class="account__name">Nguyễn Hữu Vĩnh</span>
+                        </div>
+                        <div class="account__group">
+                            <span>Date of birth: </span>
+                            <span class="account__address">28/9/2003</span>
+                        </div>
+                        <div class="account__group">
+                            <span>Address: </span>
+                            <span class="account__address">123, Lap Vo, Dong Thap</span>
+                        </div>
+                        <div class="account__group">
+                            <span>Email: </span>
+                            <span class="account__email">nguyenhuuvinh2893@gmail.com</span>
+                        </div>
+                        <div class="account__group">
+                            <span>Phone: </span>
+                            <span class="account__phone">1234567890</span>
+                        </div>
+                    </div>
+                    <div class="account__avatar">
+                        <img src="./images/avatar.png" alt="">
+                    </div>
+                </div>
+                <div class="account__content" id="update-info">
+                    <form class="form__update" autocomplete="on">
+                        <div class="form__group">
+                            <h3 class="form__title">Name <span>*</span></h3>
+                            <input type="text" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Date Of Birth <span>*</span></h3>
+                            <input type="date" name="date of birth" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Street Address <span>*</span></h3>
+                            <input type="text" name="house number" placeholder="House number and street name" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Town / City <span>*</span></h3>
+                            <input type="text" name="Town or City" placeholder="Town, City" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Province <span>*</span></h3>
+                            <input type="text" name="Province" placeholder="Province" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Email <span>*</span></h3>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Phone <span>*</span></h3>
+                            <input type="text" placeholder="Enter your phone number" required>
+                        </div>
+                        <button type="submit" class="btn btn-lg">Save Changes</button>
+
+                    </form>
+                </div>
+                <div class="account__content" id="order">
+                    <table class="table__order">
+                        <thead>
+                            <tr>
+                                <th>Order #</th>
+                                <th>Date</th>
+                                <th>Product</th>
+                                <th>Payments</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>123456</td>
+                                <td>12/5/2023</td>
+                                <td>The Born of APLEX</td>
+                                <td>$26.00</td>
+                                <td class="new">
+                                    New
+                                </td>
+                                <td>
+                                    <i class="bi bi-trash-fill order__trash"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>123456</td>
+                                <td>12/5/2023</td>
+                                <td>The Born of APLEX</td>
+                                <td>$26.00</td>
+                                <td class="delivering">
+                                    Delivering
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>123456</td>
+                                <td>12/5/2023</td>
+                                <td>The Born of APLEX</td>
+                                <td>$26.00</td>
+                                <td class="cancelled">
+                                    Cancelled
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>123456</td>
+                                <td>12/5/2023</td>
+                                <td>The Born of APLEX</td>
+                                <td>$26.00</td>
+                                <td class="completed">
+                                    Completed
+                                </td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="pagination">
+                        <button class="pagination__item prev">Previous</button>
+                        <button class="pagination__item active">1</button>
+                        <button class="pagination__item">2</button>
+                        <button class="pagination__item">3</button>
+                        <button class="pagination__item">4</button>
+                        <button class="pagination__item">5</button>
+                        <button class="pagination__item">6</button>
+                        <button class="pagination__item next">Next</button>
+                    </div>
+                </div>
+                <div class="account__content" id="change-password">
+                    <form action="" class="form__change-pass">
+                        <div class="form__group">
+                            <h3 class="form__title">Current Password <span>*</span></h3>
+                            <input type="password" placeholder="Enter current password">
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">New Password <span>*</span></h3>
+                            <input type="password" placeholder="Enter new password">
+                        </div>
+                        <div class="form__group">
+                            <h3 class="form__title">Confirm Password <span>*</span></h3>
+                            <input type="password" placeholder="Confirm new password">
+                        </div>
+                        <button type="submit" class="btn btn-lg">Save Change</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ACCOUNT END -->
+
+    <!-- OVERLAY START -->
+    <div class="overlay">
+        <div class="overlay__content">
+            <div class="overlay__delete">
+                <h1 class="overplay__title">Delete</h1>
+                <p class="overplay__desc">
+                    Are you sure you want to delete?
+                </p>
+                <div class="actions">
+                    <button class="no__action">Close</button>
+                    <button class="sure__action">Yes, Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- OVERLAY END -->
+
+
+    <!-- FOOTER START -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__social">
+                <p class="social__title">Wellcome to HV-DK Books Store</p>
+                <p>Get the breathing space now, and we'll extend your term at the other end year for go.</p>
+                <div class="social__list">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-twitter"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+            </div>
+
+            <div class="footer__contact">
+                <p class="contact__title">Contact</p>
+                <p>
+                    Address: Cao Lanh city, Dong Thap province, VietNam
+                    <br>
+                    Email: email@gmail.com
+                    <br>
+                    Phone: 0123456789
+                </p>
+            </div>
+        </div>
+        <div class="footer__design">
+            <p>Powered by HV-DK Store</p>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+
+
+    <script type="module" src="./js/account.js"></script>
+
+</body>
+
+</html>
